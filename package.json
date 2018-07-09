@@ -15,7 +15,8 @@
 	},
 	"scripts": {
 		"test": "xo && ava",
-		"build": "./node_modules/.bin/babel index.js -d build --copy-files"
+		"build": "./node_modules/.bin/babel index.js -d build --copy-files",
+		"prepare": "yarn build"
 	},
 	"files": [
 		"index.js"
