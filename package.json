@@ -9,11 +9,13 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "sindresorhus.com"
 	},
+	"main": "build/index.js",
 	"engines": {
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava",
+		"build": "./node_modules/.bin/babel index.js -d build --copy-files",
 	},
 	"files": [
 		"index.js"
